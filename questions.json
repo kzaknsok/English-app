@@ -1,23 +1,632 @@
 [
   {
     "sceneId": "scene_01",
-    "sceneName": "Greetings",
-    "en": "How %s you doing today?",
-    "correct_option": "are",
-    "other_options": ["is", "am", "be"]
+    "sceneName": "Casual Talk",
+    "en": "Hey, can you %s me a sec?",
+    "correct_option": "give",
+    "other_options": ["take", "get", "make"]
   },
   {
     "sceneId": "scene_02",
+    "sceneName": "Casual Talk",
+    "en": "I’ll %s you later, okay?",
+    "correct_option": "text",
+    "other_options": ["talk", "call", "message"]
+  },
+  {
+    "sceneId": "scene_03",
+    "sceneName": "Soliloquy",
+    "en": "Man, I really need to %s up my room.",
+    "correct_option": "clean",
+    "other_options": ["clear", "fix", "make"]
+  },
+  {
+    "sceneId": "scene_04",
+    "sceneName": "Soliloquy",
+    "en": "I should %s a break… I’m tired.",
+    "correct_option": "take",
+    "other_options": ["get", "make", "have"]
+  },
+  {
+    "sceneId": "scene_05",
+    "sceneName": "Ordering",
+    "en": "Can I %s a latte, please?",
+    "correct_option": "get",
+    "other_options": ["take", "have", "order"]
+  },
+  {
+    "sceneId": "scene_06",
+    "sceneName": "Ordering",
+    "en": "Could you %s it extra hot?",
+    "correct_option": "make",
+    "other_options": ["do", "get", "heat"]
+  },
+  {
+    "sceneId": "scene_07",
+    "sceneName": "Directions",
+    "en": "Just %s straight and you’ll see it.",
+    "correct_option": "go",
+    "other_options": ["walk", "move", "head"]
+  },
+  {
+    "sceneId": "scene_08",
+    "sceneName": "Directions",
+    "en": "It’s right %s the corner.",
+    "correct_option": "around",
+    "other_options": ["on", "at", "near"]
+  },
+  {
+    "sceneId": "scene_09",
     "sceneName": "Shopping",
-    "en": "How %s is this shirt?",
+    "en": "Do you %s this in a bigger size?",
+    "correct_option": "have",
+    "other_options": ["get", "carry", "sell"]
+  },
+  {
+    "sceneId": "scene_10",
+    "sceneName": "Shopping",
+    "en": "Can I %s this on?",
+    "correct_option": "try",
+    "other_options": ["put", "wear", "fit"]
+  },
+  {
+    "sceneId": "scene_11",
+    "sceneName": "Emotions",
+    "en": "I’m so %s out today.",
+    "correct_option": "stressed",
+    "other_options": ["stress", "stressful", "stressy"]
+  },
+  {
+    "sceneId": "scene_12",
+    "sceneName": "Emotions",
+    "en": "I’m %s excited for tomorrow!",
+    "correct_option": "so",
+    "other_options": ["very", "too", "much"]
+  },
+  {
+    "sceneId": "scene_13",
+    "sceneName": "Casual Talk",
+    "en": "Let’s %s up later.",
+    "correct_option": "meet",
+    "other_options": ["see", "hang", "talk"]
+  },
+  {
+    "sceneId": "scene_14",
+    "sceneName": "Casual Talk",
+    "en": "I %s you know when I’m done.",
+    "correct_option": "let",
+    "other_options": ["make", "give", "tell"]
+  },
+  {
+    "sceneId": "scene_15",
+    "sceneName": "Soliloquy",
+    "en": "I totally %s my keys again…",
+    "correct_option": "lost",
+    "other_options": ["lose", "missed", "forgot"]
+  },
+  {
+    "sceneId": "scene_16",
+    "sceneName": "Soliloquy",
+    "en": "I should really %s cooking more.",
+    "correct_option": "start",
+    "other_options": ["try", "do", "make"]
+  },
+  {
+    "sceneId": "scene_17",
+    "sceneName": "Ordering",
+    "en": "Can I %s this to go?",
+    "correct_option": "get",
+    "other_options": ["take", "make", "order"]
+  },
+  {
+    "sceneId": "scene_18",
+    "sceneName": "Ordering",
+    "en": "Could you %s me some water?",
+    "correct_option": "bring",
+    "other_options": ["take", "get", "give"]
+  },
+  {
+    "sceneId": "scene_19",
+    "sceneName": "Directions",
+    "en": "It’s %s across from the station.",
+    "correct_option": "right",
+    "other_options": ["just", "straight", "near"]
+  },
+  {
+    "sceneId": "scene_20",
+    "sceneName": "Directions",
+    "en": "You’ll %s it on your left.",
+    "correct_option": "see",
+    "other_options": ["find", "look", "spot"]
+  },
+  {
+    "sceneId": "scene_21",
+    "sceneName": "Shopping",
+    "en": "How %s is this one?",
+    "correct_option": "much",
+    "other_options": ["many", "more", "cost"]
+  },
+  {
+    "sceneId": "scene_22",
+    "sceneName": "Shopping",
+    "en": "Do you %s any discounts today?",
+    "correct_option": "have",
+    "other_options": ["give", "offer", "do"]
+  },
+  {
+    "sceneId": "scene_23",
+    "sceneName": "Emotions",
+    "en": "I’m %s of tired.",
+    "correct_option": "kind",
+    "other_options": ["sort", "little", "bit"]
+  },
+  {
+    "sceneId": "scene_24",
+    "sceneName": "Emotions",
+    "en": "I’m really %s up about it.",
+    "correct_option": "bummed",
+    "other_options": ["bum", "sad", "down"]
+  },
+  {
+    "sceneId": "scene_25",
+    "sceneName": "Casual Talk",
+    "en": "Let me %s my stuff real quick.",
+    "correct_option": "grab",
+    "other_options": ["take", "get", "pick"]
+  },
+  {
+    "sceneId": "scene_26",
+    "sceneName": "Casual Talk",
+    "en": "I’ll %s you in a bit.",
+    "correct_option": "see",
+    "other_options": ["meet", "call", "text"]
+  },
+  {
+    "sceneId": "scene_27",
+    "sceneName": "Soliloquy",
+    "en": "I need to %s down for a minute.",
+    "correct_option": "sit",
+    "other_options": ["set", "seat", "sit up"]
+  },
+  {
+    "sceneId": "scene_28",
+    "sceneName": "Soliloquy",
+    "en": "Let me %s what’s in the fridge.",
+    "correct_option": "check",
+    "other_options": ["look", "see", "find"]
+  },
+  {
+    "sceneId": "scene_29",
+    "sceneName": "Ordering",
+    "en": "Can I %s the same thing as him?",
+    "correct_option": "get",
+    "other_options": ["take", "order", "have"]
+  },
+  {
+    "sceneId": "scene_30",
+    "sceneName": "Emotions",
+    "en": "I’m %s pumped for tonight!",
+    "correct_option": "so",
+    "other_options": ["very", "too", "much"]
+  },
+  {
+    "sceneId": "scene_31",
+    "sceneName": "Casual Talk",
+    "en": "Hey, wanna %s out later?",
+    "correct_option": "hang",
+    "other_options": ["meet", "stay", "sit"]
+  },
+  {
+    "sceneId": "scene_32",
+    "sceneName": "Casual Talk",
+    "en": "Can you %s me that charger?",
+    "correct_option": "pass",
+    "other_options": ["give", "hand", "send"]
+  },
+  {
+    "sceneId": "scene_33",
+    "sceneName": "Soliloquy",
+    "en": "I really need to %s my laundry today.",
+    "correct_option": "do",
+    "other_options": ["make", "wash", "clean"]
+  },
+  {
+    "sceneId": "scene_34",
+    "sceneName": "Soliloquy",
+    "en": "Let me %s a quick break.",
+    "correct_option": "take",
+    "other_options": ["get", "have", "make"]
+  },
+  {
+    "sceneId": "scene_35",
+    "sceneName": "Ordering",
+    "en": "Can I %s the same drink again?",
+    "correct_option": "get",
+    "other_options": ["take", "order", "have"]
+  },
+  {
+    "sceneId": "scene_36",
+    "sceneName": "Ordering",
+    "en": "Could you %s it without sugar?",
+    "correct_option": "make",
+    "other_options": ["do", "prepare", "serve"]
+  },
+  {
+    "sceneId": "scene_37",
+    "sceneName": "Directions",
+    "en": "Just %s left at the next light.",
+    "correct_option": "turn",
+    "other_options": ["go", "move", "shift"]
+  },
+  {
+    "sceneId": "scene_38",
+    "sceneName": "Directions",
+    "en": "It’s %s next to the bookstore.",
+    "correct_option": "right",
+    "other_options": ["just", "almost", "close"]
+  },
+  {
+    "sceneId": "scene_39",
+    "sceneName": "Shopping",
+    "en": "Do you %s this in any other colors?",
+    "correct_option": "have",
+    "other_options": ["sell", "carry", "offer"]
+  },
+  {
+    "sceneId": "scene_40",
+    "sceneName": "Shopping",
+    "en": "Can I %s a refund for this?",
+    "correct_option": "get",
+    "other_options": ["take", "receive", "have"]
+  },
+  {
+    "sceneId": "scene_41",
+    "sceneName": "Emotions",
+    "en": "I’m %s annoyed right now.",
+    "correct_option": "so",
+    "other_options": ["very", "too", "much"]
+  },
+  {
+    "sceneId": "scene_42",
+    "sceneName": "Emotions",
+    "en": "I’m really %s about the test.",
+    "correct_option": "nervous",
+    "other_options": ["nervy", "nerve", "nervously"]
+  },
+  {
+    "sceneId": "scene_43",
+    "sceneName": "Casual Talk",
+    "en": "Let’s %s up tomorrow morning.",
+    "correct_option": "meet",
+    "other_options": ["see", "hang", "talk"]
+  },
+  {
+    "sceneId": "scene_44",
+    "sceneName": "Casual Talk",
+    "en": "I’ll %s you when I get home.",
+    "correct_option": "text",
+    "other_options": ["call", "message", "ping"]
+  },
+  {
+    "sceneId": "scene_45",
+    "sceneName": "Soliloquy",
+    "en": "I totally %s my wallet somewhere.",
+    "correct_option": "lost",
+    "other_options": ["lose", "forgot", "missed"]
+  },
+  {
+    "sceneId": "scene_46",
+    "sceneName": "Soliloquy",
+    "en": "I should %s organizing my desk.",
+    "correct_option": "start",
+    "other_options": ["begin", "try", "do"]
+  },
+  {
+    "sceneId": "scene_47",
+    "sceneName": "Ordering",
+    "en": "Can I %s a large iced tea?",
+    "correct_option": "get",
+    "other_options": ["take", "order", "have"]
+  },
+  {
+    "sceneId": "scene_48",
+    "sceneName": "Ordering",
+    "en": "Could you %s me the menu?",
+    "correct_option": "bring",
+    "other_options": ["take", "give", "show"]
+  },
+  {
+    "sceneId": "scene_49",
+    "sceneName": "Directions",
+    "en": "You’ll %s it right ahead.",
+    "correct_option": "see",
+    "other_options": ["find", "spot", "look"]
+  },
+  {
+    "sceneId": "scene_50",
+    "sceneName": "Directions",
+    "en": "It’s %s behind the big building.",
+    "correct_option": "just",
+    "other_options": ["right", "straight", "near"]
+  },
+  {
+    "sceneId": "scene_51",
+    "sceneName": "Shopping",
+    "en": "How %s does this cost?",
     "correct_option": "much",
     "other_options": ["many", "more", "most"]
   },
   {
-    "sceneId": "scene_03",
-    "sceneName": "Restaurant",
-    "en": "Could we %s the menu, please?",
+    "sceneId": "scene_52",
+    "sceneName": "Shopping",
+    "en": "Do you %s any deals today?",
     "correct_option": "have",
-    "other_options": ["has", "having", "had"]
+    "other_options": ["offer", "give", "do"]
+  },
+  {
+    "sceneId": "scene_53",
+    "sceneName": "Emotions",
+    "en": "I’m %s of upset.",
+    "correct_option": "kind",
+    "other_options": ["sort", "bit", "little"]
+  },
+  {
+    "sceneId": "scene_54",
+    "sceneName": "Emotions",
+    "en": "I’m really %s out lately.",
+    "correct_option": "burned",
+    "other_options": ["burn", "burning", "burnt"]
+  },
+  {
+    "sceneId": "scene_55",
+    "sceneName": "Casual Talk",
+    "en": "Let me %s my jacket first.",
+    "correct_option": "grab",
+    "other_options": ["take", "pick", "get"]
+  },
+  {
+    "sceneId": "scene_56",
+    "sceneName": "Casual Talk",
+    "en": "I’ll %s you later tonight.",
+    "correct_option": "call",
+    "other_options": ["text", "meet", "see"]
+  },
+  {
+    "sceneId": "scene_57",
+    "sceneName": "Soliloquy",
+    "en": "I need to %s down for a bit.",
+    "correct_option": "lie",
+    "other_options": ["lay", "sit", "rest"]
+  },
+  {
+    "sceneId": "scene_58",
+    "sceneName": "Soliloquy",
+    "en": "Let me %s what time it is.",
+    "correct_option": "check",
+    "other_options": ["see", "look", "find"]
+  },
+  {
+    "sceneId": "scene_59",
+    "sceneName": "Ordering",
+    "en": "Can I %s the same thing she got?",
+    "correct_option": "get",
+    "other_options": ["take", "order", "have"]
+  },
+  {
+    "sceneId": "scene_60",
+    "sceneName": "Emotions",
+    "en": "I’m %s hyped for the weekend!",
+    "correct_option": "so",
+    "other_options": ["very", "too", "much"]
+  },
+  {
+    "sceneId": "scene_61",
+    "sceneName": "Casual Talk",
+    "en": "Hey, can you %s me what time we’re meeting?",
+    "correct_option": "tell",
+    "other_options": ["say", "talk", "share"]
+  },
+  {
+    "sceneId": "scene_62",
+    "sceneName": "Casual Talk",
+    "en": "I’m gonna %s a quick shower.",
+    "correct_option": "take",
+    "other_options": ["get", "make", "do"]
+  },
+  {
+    "sceneId": "scene_63",
+    "sceneName": "Soliloquy",
+    "en": "I really need to %s my phone… battery’s dying.",
+    "correct_option": "charge",
+    "other_options": ["load", "fill", "power"]
+  },
+  {
+    "sceneId": "scene_64",
+    "sceneName": "Soliloquy",
+    "en": "Let me %s what’s going on outside.",
+    "correct_option": "see",
+    "other_options": ["look", "watch", "check"]
+  },
+  {
+    "sceneId": "scene_65",
+    "sceneName": "Ordering",
+    "en": "Can I %s a small fries with that?",
+    "correct_option": "get",
+    "other_options": ["take", "order", "add"]
+  },
+  {
+    "sceneId": "scene_66",
+    "sceneName": "Ordering",
+    "en": "Could you %s it without onions?",
+    "correct_option": "make",
+    "other_options": ["do", "prepare", "serve"]
+  },
+  {
+    "sceneId": "scene_67",
+    "sceneName": "Directions",
+    "en": "You need to %s right after the bridge.",
+    "correct_option": "turn",
+    "other_options": ["go", "move", "head"]
+  },
+  {
+    "sceneId": "scene_68",
+    "sceneName": "Directions",
+    "en": "It’s %s across the street.",
+    "correct_option": "right",
+    "other_options": ["just", "straight", "near"]
+  },
+  {
+    "sceneId": "scene_69",
+    "sceneName": "Shopping",
+    "en": "Do you %s this in medium?",
+    "correct_option": "have",
+    "other_options": ["carry", "sell", "offer"]
+  },
+  {
+    "sceneId": "scene_70",
+    "sceneName": "Shopping",
+    "en": "Can I %s this for a different size?",
+    "correct_option": "exchange",
+    "other_options": ["change", "switch", "replace"]
+  },
+  {
+    "sceneId": "scene_71",
+    "sceneName": "Emotions",
+    "en": "I’m %s excited but also nervous.",
+    "correct_option": "kinda",
+    "other_options": ["sorta", "little", "bit"]
+  },
+  {
+    "sceneId": "scene_72",
+    "sceneName": "Emotions",
+    "en": "I’m really %s off today.",
+    "correct_option": "tired",
+    "other_options": ["tiring", "tire", "tiredly"]
+  },
+  {
+    "sceneId": "scene_73",
+    "sceneName": "Casual Talk",
+    "en": "Let’s %s up before we head out.",
+    "correct_option": "meet",
+    "other_options": ["see", "hang", "talk"]
+  },
+  {
+    "sceneId": "scene_74",
+    "sceneName": "Casual Talk",
+    "en": "I’ll %s you when I’m close.",
+    "correct_option": "text",
+    "other_options": ["call", "message", "ping"]
+  },
+  {
+    "sceneId": "scene_75",
+    "sceneName": "Soliloquy",
+    "en": "I totally %s my headphones again.",
+    "correct_option": "lost",
+    "other_options": ["lose", "forgot", "missed"]
+  },
+  {
+    "sceneId": "scene_76",
+    "sceneName": "Soliloquy",
+    "en": "I should %s cleaning this mess.",
+    "correct_option": "start",
+    "other_options": ["begin", "try", "do"]
+  },
+  {
+    "sceneId": "scene_77",
+    "sceneName": "Ordering",
+    "en": "Can I %s a large smoothie?",
+    "correct_option": "get",
+    "other_options": ["take", "order", "have"]
+  },
+  {
+    "sceneId": "scene_78",
+    "sceneName": "Ordering",
+    "en": "Could you %s me a straw?",
+    "correct_option": "bring",
+    "other_options": ["take", "give", "hand"]
+  },
+  {
+    "sceneId": "scene_79",
+    "sceneName": "Directions",
+    "en": "You’ll %s it right after the park.",
+    "correct_option": "see",
+    "other_options": ["find", "spot", "look"]
+  },
+  {
+    "sceneId": "scene_80",
+    "sceneName": "Directions",
+    "en": "It’s %s behind the supermarket.",
+    "correct_option": "just",
+    "other_options": ["right", "straight", "near"]
+  },
+  {
+    "sceneId": "scene_81",
+    "sceneName": "Shopping",
+    "en": "How %s is this jacket?",
+    "correct_option": "much",
+    "other_options": ["many", "more", "most"]
+  },
+  {
+    "sceneId": "scene_82",
+    "sceneName": "Shopping",
+    "en": "Do you %s any coupons I can use?",
+    "correct_option": "have",
+    "other_options": ["offer", "give", "do"]
+  },
+  {
+    "sceneId": "scene_83",
+    "sceneName": "Emotions",
+    "en": "I’m %s of overwhelmed.",
+    "correct_option": "kind",
+    "other_options": ["sort", "bit", "little"]
+  },
+  {
+    "sceneId": "scene_84",
+    "sceneName": "Emotions",
+    "en": "I’m really %s out from work.",
+    "correct_option": "worn",
+    "other_options": ["wear", "wearing", "worned"]
+  },
+  {
+    "sceneId": "scene_85",
+    "sceneName": "Casual Talk",
+    "en": "Let me %s my bag real quick.",
+    "correct_option": "grab",
+    "other_options": ["take", "pick", "get"]
+  },
+  {
+    "sceneId": "scene_86",
+    "sceneName": "Casual Talk",
+    "en": "I’ll %s you once I arrive.",
+    "correct_option": "call",
+    "other_options": ["text", "meet", "see"]
+  },
+  {
+    "sceneId": "scene_87",
+    "sceneName": "Soliloquy",
+    "en": "I need to %s down for a second.",
+    "correct_option": "sit",
+    "other_options": ["set", "seat", "sit up"]
+  },
+  {
+    "sceneId": "scene_88",
+    "sceneName": "Soliloquy",
+    "en": "Let me %s if I have any snacks.",
+    "correct_option": "check",
+    "other_options": ["look", "see", "find"]
+  },
+  {
+    "sceneId": "scene_89",
+    "sceneName": "Ordering",
+    "en": "Can I %s the same thing as them?",
+    "correct_option": "get",
+    "other_options": ["take", "order", "have"]
+  },
+  {
+    "sceneId": "scene_90",
+    "sceneName": "Emotions",
+    "en": "I’m %s pumped for tomorrow!",
+    "correct_option": "so",
+    "other_options": ["very", "too", "much"]
   }
 ]
