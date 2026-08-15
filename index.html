@@ -233,7 +233,6 @@
       banner.className = "feedback-banner";
       banner.textContent = "";
 
-      // C言語の _get_random_index で問題を抽選
       const idx = Module._get_random_index(questionsData.length);
       currentData = questionsData[idx];
 
@@ -247,7 +246,6 @@
       const enHtml = enTemplate.replace("%s", `<span class="blank" id="blank-target">_____</span>`);
       document.getElementById("en-display").innerHTML = enHtml;
 
-      // 正解と不正解選択肢をまとめたリストを作成
       correctAnswer = data.correct_option || (data.options ? data.options[0] : "");
       let rawOptions = [];
       if (data.other_options) {
@@ -258,20 +256,24 @@
 
       const count = rawOptions.length;
 
-      // C言語の _shuffle_indices でインデックスをランダム化
-      const ptr = Module._malloc(count * 4);
-      for (let i = 0; i < count; i++) {
-        Module.setValue(ptr + i * 4, i, 'i32');
-      }
+      // C言語の配列ポインタをWasmメモリ領域内に作成して処理
+      const typedArray = new Int32Array(count);
+      for (let i = 0; i < count; i++) typedArray[i] = i;
+
+      const numBytes = typedArray.length * typedArray.BYTES_PER_ELEMENT;
+      const ptr = Module._malloc ? Module._malloc(numBytes) : Module._malloc_heap(numBytes);
       
-      Module._shuffle_indices(ptr, count);
+      // Module.HEAP32 を介してC言語関数を実行
+      Module.HEAP32.set(typedArray, ptr >> 2);
+      Module._shuffle_array(ptr, count);
 
       const shuffledOptions = [];
       for (let i = 0; i < count; i++) {
-        const shuffledIdx = Module.getValue(ptr + i * 4, 'i32');
+        const shuffledIdx = Module.HEAP32[(ptr >> 2) + i];
         shuffledOptions.push(rawOptions[shuffledIdx]);
       }
-      Module._free(ptr);
+      
+      if (Module._free) Module._free(ptr);
 
       const grid = document.getElementById("options-grid");
       grid.innerHTML = "";
@@ -311,7 +313,7 @@
         streakCount++;
       } else {
         if (blank) blank.classList.add("incorrect");
-        btnElement.classList.add("btn-incorrect");
+        if (btnElement) btnElement.classList.add("btn-incorrect");
         banner.className = "feedback-banner show-incorrect";
         banner.textContent = `❌ Oops! Correct answer: ${correctAnswer}`;
         streakCount = 0;
@@ -320,7 +322,6 @@
       document.getElementById("score-tracker").textContent = `Streak: ${streakCount}`;
     }
 
-    // キーボード入力サポート（1〜4キーで回答, Enter/Spaceで次へ）
     window.addEventListener('keydown', (event) => {
       const key = event.key;
       if (['1', '2', '3', '4'].includes(key)) {
