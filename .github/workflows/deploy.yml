@@ -1,0 +1,45 @@
+name: Build and Deploy Wasm App to GitHub Pages
+
+on:
+  push:
+    branches: [ "main" ]
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Emscripten SDK
+        uses: mymindstorm/setup-emsdk@v12
+        with:
+          version: 3.1.50
+
+      - name: Compile C to WebAssembly
+        run: |
+          emcc main.c -O3 \
+            -s WASM=1 \
+            -s EXPORTED_RUNTIME_METHODS="['ccall', '_malloc', '_free']" \
+            -o logic.js
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: '.'
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

@@ -1,0 +1,370 @@
+[
+  {
+    "id": 1,
+    "sceneId": "SCENE_FRIEND_CHAT",
+    "sceneName": "友達との日常会話・近況報告",
+    "jp": "最近%sにはまっているんだ。",
+    "en": "I've been really into %s recently.",
+    "options": ["cooking", "reading", "yoga", "baking"]
+  },
+  {
+    "id": 2,
+    "sceneId": "SCENE_FRIEND_CHAT",
+    "sceneName": "友達との日常会話・近況報告",
+    "jp": "週末に%sに行く予定なんだ。",
+    "en": "I'm planning to go to %s this weekend.",
+    "options": ["the beach", "the museum", "a café", "the park"]
+  },
+  {
+    "id": 3,
+    "sceneId": "SCENE_FRIEND_CHAT",
+    "sceneName": "友達との日常会話・近況報告",
+    "jp": "昨日%sを観たんだけど、すごく良かったよ。",
+    "en": "I watched %s yesterday, and it was amazing.",
+    "options": ["that movie", "the drama", "the documentary", "the show"]
+  },
+  {
+    "id": 4,
+    "sceneId": "SCENE_FRIEND_CHAT",
+    "sceneName": "友達との日常会話・近況報告",
+    "jp": "最近仕事が忙しくて、全然%sできていないんだ。",
+    "en": "Work has been so busy lately, I haven't had time to %s at all.",
+    "options": ["relax", "exercise", "hang out with friends", "sleep well"]
+  },
+  {
+    "id": 5,
+    "sceneId": "SCENE_FRIEND_CHAT",
+    "sceneName": "友達との日常会話・近況報告",
+    "jp": "%sについて聞いた？びっくりしたよ！",
+    "en": "Did you hear about %s? I was so surprised!",
+    "options": ["the news", "that rumor", "what happened to John", "the new policy"]
+  },
+  {
+    "id": 6,
+    "sceneId": "SCENE_FRIEND_CHAT",
+    "sceneName": "友達との日常会話・近況報告",
+    "jp": "実は%sを買うかどうか迷っているんだよね。",
+    "en": "To be honest, I'm torn about whether to buy %s.",
+    "options": ["a new phone", "this jacket", "a new laptop", "these shoes"]
+  },
+  {
+    "id": 7,
+    "sceneId": "SCENE_FRIEND_CHAT",
+    "sceneName": "友達との日常会話・近況報告",
+    "jp": "この前%sで偶然友達に会ったよ！",
+    "en": "I ran into a friend at %s the other day!",
+    "options": ["the supermarket", "the station", "the gym", "the mall"]
+  },
+  {
+    "id": 8,
+    "sceneId": "SCENE_FRIEND_CHAT",
+    "sceneName": "友達との日常会話・近況報告",
+    "jp": "最後に%sに会ったのっていつだっけ？",
+    "en": "When was the last time we saw %s?",
+    "options": ["Sarah", "our old classmates", "your brother", "each other"]
+  },
+  {
+    "id": 9,
+    "sceneId": "SCENE_FRIEND_CHAT",
+    "sceneName": "友達との日常会話・近況報告",
+    "jp": "%sのおかげで、最近すごく体調が良いんだ。",
+    "en": "Thanks to %s, I've been feeling great lately.",
+    "options": ["my new routine", "drinking more water", "going to bed early", "yoga"]
+  },
+  {
+    "id": 10,
+    "sceneId": "SCENE_FRIEND_CHAT",
+    "sceneName": "友達との日常会話・近況報告",
+    "jp": "マジで%sかと思ったよ！あはは。",
+    "en": "I seriously thought %s! Haha.",
+    "options": ["it was a joke", "you were mad", "I lost my keys", "it was raining"]
+  },
+  {
+    "id": 11,
+    "sceneId": "SCENE_FRIEND_CHAT",
+    "sceneName": "友達との日常会話・近況報告",
+    "jp": "最近%sの動画をYouTubeでよく観ているよ。",
+    "en": "I've been watching a lot of videos about %s on YouTube lately.",
+    "options": ["cat", "cooking", "travel", "DIY"]
+  },
+  {
+    "id": 12,
+    "sceneId": "SCENE_FRIEND_CHAT",
+    "sceneName": "友達との日常会話・近況報告",
+    "jp": "来月%sに行く予定なんだけど、一緒に行く？",
+    "en": "I'm planning to visit %s next month. Want to come along?",
+    "options": ["Kyoto", "Hokkaido", "Disneyland", "a music festival"]
+  },
+  {
+    "id": 13,
+    "sceneId": "SCENE_FRIEND_CHAT",
+    "sceneName": "友達との日常会話・近況報告",
+    "jp": "最近%sの調子があまり良くないんだよね。",
+    "en": "My %s hasn't been working very well lately.",
+    "options": ["car", "computer", "phone", "stomach"]
+  },
+  {
+    "id": 14,
+    "sceneId": "SCENE_FRIEND_CHAT",
+    "sceneName": "友達との日常会話・近況報告",
+    "jp": "そういえば、%sの件どうなった？",
+    "en": "By the way, what happened with %s?",
+    "options": ["your job interview", "your apartment search", "that project", "your trip"]
+  },
+  {
+    "id": 15,
+    "sceneId": "SCENE_FRIEND_CHAT",
+    "sceneName": "友達との日常会話・近況報告",
+    "jp": "最近%sを始めたんだけど、想像以上に難しいよ。",
+    "en": "I recently started %s, and it's much harder than I thought.",
+    "options": ["learning Spanish", "playing the guitar", "gardening", "running"]
+  },
+  {
+    "id": 16,
+    "sceneId": "SCENE_FRIEND_CHAT",
+    "sceneName": "友達との日常会話・近況報告",
+    "jp": "久しぶりに%sを食べたらすごく美味しかった！",
+    "en": "I ate %s for the first time in a while, and it was so delicious!",
+    "options": ["ramen", "sushi", "home-cooked meals", "ice cream"]
+  },
+  {
+    "id": 17,
+    "sceneId": "SCENE_FRIEND_CHAT",
+    "sceneName": "友達との日常会話・近況報告",
+    "jp": "近所に新しい%sができたんだよ。",
+    "en": "A new %s opened in my neighborhood.",
+    "options": ["bakery", "coffee shop", "gym", "supermarket"]
+  },
+  {
+    "id": 18,
+    "sceneId": "SCENE_FRIEND_CHAT",
+    "sceneName": "友達との日常会話・近況報告",
+    "jp": "次の休みに%sを掃除しようと思ってる。",
+    "en": "I'm thinking of cleaning %s on my next day off.",
+    "options": ["my room", "the balcony", "the kitchen", "my closet"]
+  },
+  {
+    "id": 19,
+    "sceneId": "SCENE_FRIEND_CHAT",
+    "sceneName": "友達との日常会話・近況報告",
+    "jp": "一度でいいから%sをやってみたいんだよね。",
+    "en": "I'd love to try %s at least once in my life.",
+    "options": ["skydiving", "scuba diving", "living abroad", "marathon running"]
+  },
+  {
+    "id": 20,
+    "sceneId": "SCENE_FRIEND_CHAT",
+    "sceneName": "友達との日常会話・近況報告",
+    "jp": "最近%sを読むのにハマってるんだ。",
+    "en": "I've been totally hooked on reading %s lately.",
+    "options": ["mystery novels", "manga", "self-help books", "biographies"]
+  },
+  {
+    "id": 21,
+    "sceneId": "SCENE_DINING",
+    "sceneName": "食事・カフェ・レストラン",
+    "jp": "すみません、%sをひとつください。",
+    "en": "Excuse me, can I get a %s, please?",
+    "options": ["iced coffee", "cheeseburger", "slice of cheesecake", "bottle of water"]
+  },
+  {
+    "id": 22,
+    "sceneId": "SCENE_DINING",
+    "sceneName": "食事・カフェ・レストラン",
+    "jp": "%s抜きでお願いできますか？",
+    "en": "Could you make that without %s, please?",
+    "options": ["onions", "mayo", "ice", "sugar"]
+  },
+  {
+    "id": 23,
+    "sceneId": "SCENE_DINING",
+    "sceneName": "食事・カフェ・レストラン",
+    "jp": "これって%sが入っていますか？",
+    "en": "Does this contain %s?",
+    "options": ["nuts", "dairy", "gluten", "pork"]
+  },
+  {
+    "id": 24,
+    "sceneId": "SCENE_DINING",
+    "sceneName": "食事・カフェ・レストラン",
+    "jp": "このお店のオススメの%sは何ですか？",
+    "en": "What is your recommended %s here?",
+    "options": ["dish", "dessert", "drink", "appetizer"]
+  },
+  {
+    "id": 25,
+    "sceneId": "SCENE_DINING",
+    "sceneName": "食事・カフェ・レストラン",
+    "jp": "%sを取ってもらえますか？",
+    "en": "Could you pass me %s, please?",
+    "options": ["the salt", "the pepper", "the napkin", "the water pitcher"]
+  },
+  {
+    "id": 26,
+    "sceneId": "SCENE_DINING",
+    "sceneName": "食事・カフェ・レストラン",
+    "jp": "お会計は%sでお願いできますか？",
+    "en": "Can we pay %s, please?",
+    "options": ["separately", "together", "by credit card", "in cash"]
+  },
+  {
+    "id": 27,
+    "sceneId": "SCENE_DINING",
+    "sceneName": "食事・カフェ・レストラン",
+    "jp": "持ち帰りで%sをお願いします。",
+    "en": "I'd like a %s to go, please.",
+    "options": ["latte", "sandwich", "pizza", "bento box"]
+  },
+  {
+    "id": 28,
+    "sceneId": "SCENE_DINING",
+    "sceneName": "食事・カフェ・レストラン",
+    "jp": "最近%sを控えるようにしているんだ。",
+    "en": "I'm trying to cut down on %s lately.",
+    "options": ["sugar", "carbs", "caffeine", "junk food"]
+  },
+  {
+    "id": 29,
+    "sceneId": "SCENE_DINING",
+    "sceneName": "食事・カフェ・レストラン",
+    "jp": "この%s、すごく美味しいね！",
+    "en": "This %s is absolutely delicious!",
+    "options": ["soup", "pasta", "steak", "cocktail"]
+  },
+  {
+    "id": 30,
+    "sceneId": "SCENE_DINING",
+    "sceneName": "食事・カフェ・レストラン",
+    "jp": "お冷のおかわりを%sお願いできますか？",
+    "en": "Could I get a refill on %s, please?",
+    "options": ["water", "iced tea", "coffee", "my drink"]
+  },
+  {
+    "id": 31,
+    "sceneId": "SCENE_SERVICE",
+    "sceneName": "買い物・交通・サービス利用",
+    "jp": "すみません、%sを探しているのですがどこにありますか？",
+    "en": "Excuse me, I'm looking for %s. Where can I find it?",
+    "options": ["the restroom", "the fitting room", "batteries", "souvenirs"]
+  },
+  {
+    "id": 32,
+    "sceneId": "SCENE_SERVICE",
+    "sceneName": "買い物・交通・サービス利用",
+    "jp": "これの%sサイズはありますか？",
+    "en": "Do you have this in a %s size?",
+    "options": ["medium", "large", "smaller", "larger"]
+  },
+  {
+    "id": 33,
+    "sceneId": "SCENE_SERVICE",
+    "sceneName": "買い物・交通・サービス利用",
+    "jp": "%sで支払うことはできますか？",
+    "en": "Can I pay with %s?",
+    "options": ["credit card", "touch pay", "cash", "a gift card"]
+  },
+  {
+    "id": 34,
+    "sceneId": "SCENE_SERVICE",
+    "sceneName": "買い物・交通・サービス利用",
+    "jp": "%s行きのチケットを1枚ください。",
+    "en": "One ticket to %s, please.",
+    "options": ["Tokyo Station", "the airport", "Central Park", "Downtown"]
+  },
+  {
+    "id": 35,
+    "sceneId": "SCENE_SERVICE",
+    "sceneName": "買い物・交通・サービス利用",
+    "jp": "次の%sは何時に発車しますか？",
+    "en": "What time does the next %s leave?",
+    "options": ["train", "bus", "express train", "ferry"]
+  },
+  {
+    "id": 36,
+    "sceneId": "SCENE_WORK_STUDY",
+    "sceneName": "仕事・学校・学習",
+    "jp": "%sの進捗はどうですか？",
+    "en": "How is the progress on %s?",
+    "options": ["the report", "the project", "your assignment", "the preparations"]
+  },
+  {
+    "id": 37,
+    "sceneId": "SCENE_WORK_STUDY",
+    "sceneName": "仕事・学校・学習",
+    "jp": "後で%sを確認しておきますね。",
+    "en": "I'll double-check %s later.",
+    "options": ["the schedule", "the documents", "the details", "the email"]
+  },
+  {
+    "id": 38,
+    "sceneId": "SCENE_WORK_STUDY",
+    "sceneName": "仕事・学校・学習",
+    "jp": "%sについて少し質問してもよろしいですか？",
+    "en": "May I ask you a few questions regarding %s?",
+    "options": ["this task", "the presentation", "the deadline", "the new rule"]
+  },
+  {
+    "id": 39,
+    "sceneId": "SCENE_WORK_STUDY",
+    "sceneName": "仕事・学校・学習",
+    "jp": "明日までに%sを提出しなければなりません。",
+    "en": "I need to submit %s by tomorrow.",
+    "options": ["the application", "my homework", "the expense report", "the draft"]
+  },
+  {
+    "id": 40,
+    "sceneId": "SCENE_WORK_STUDY",
+    "sceneName": "仕事・学校・学習",
+    "jp": "%sについてのアイデアをブレストしましょう。",
+    "en": "Let's brainstorm some ideas for %s.",
+    "options": ["the new campaign", "the event", "our marketing strategy", "the design"]
+  },
+  {
+    "id": 41,
+    "sceneId": "SCENE_SELF_TALK",
+    "sceneName": "独り言・感情のつぶやき",
+    "jp": "今日はなんだか%sな気分だなあ。",
+    "en": "I feel like %s today.",
+    "options": ["eating sushi", "going for a walk", "doing nothing", "sleeping in"]
+  },
+  {
+    "id": 42,
+    "sceneId": "SCENE_SELF_TALK",
+    "sceneName": "独り言・感情のつぶやき",
+    "jp": "うわ、%sするのを完全に忘れてた！",
+    "en": "Oh no, I completely forgot to %s!",
+    "options": ["buy milk", "reply to the email", "turn off the lights", "lock the door"]
+  },
+  {
+    "id": 43,
+    "sceneId": "SCENE_SELF_TALK",
+    "sceneName": "独り言・感情のつぶやき",
+    "jp": "%sを持ってきたらよかったなあ。",
+    "en": "I wish I had brought %s.",
+    "options": ["an umbrella", "my jacket", "my power bank", "a bottle of water"]
+  },
+  {
+    "id": 44,
+    "sceneId": "SCENE_SELF_TALK",
+    "sceneName": "独り言・感情のつぶやき",
+    "jp": "よし、まずは%sから片付けよう！",
+    "en": "Alright, let's start by dealing with %s first!",
+    "options": ["this task", "the dishes", "the laundry", "my emails"]
+  },
+  {
+    "id": 45,
+    "sceneId": "SCENE_SELF_TALK",
+    "sceneName": "独り言・感情のつぶやき",
+    "jp": "早く%sが終わるといいな。",
+    "en": "I hope %s finishes soon.",
+    "options": ["this meeting", "the rain", "the construction work", "this long day"]
+  },
+  {
+    "id": 46,
+    "sceneId": "SCENE_SELF_TALK",
+    "sceneName": "独り言・感情のつぶやき",
+    "jp": "自分へのご褒美に%sを買おう。",
+    "en": "I'll buy %s as a treat for myself.",
+    "options": ["this cake", "these shoes", "a new watch", "this coffee"]
+  }
+]
