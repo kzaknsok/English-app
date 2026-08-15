@@ -29,7 +29,7 @@ jobs:
         run: |
           emcc main.c -O3 \
             -s WASM=1 \
-            -s EXPORTED_RUNTIME_METHODS="['ccall', '_malloc', '_free']" \
+            -s EXPORTED_RUNTIME_METHODS="['ccall', 'setValue', 'getValue', '_malloc', '_free']" \
             -o logic.js
 
       - name: Setup Pages

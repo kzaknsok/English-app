@@ -10,7 +10,7 @@ void init_rand() {
     srand((unsigned int)time(NULL));
 }
 
-// 選択肢のシャッフル関数（C言語のロジック）
+// 選択肢のインデックスをシャッフル（Fisher-Yates アルゴリズム）
 EMSCRIPTEN_KEEPALIVE
 void shuffle_indices(int *array, int n) {
     if (n <= 1) return;
@@ -22,7 +22,7 @@ void shuffle_indices(int *array, int n) {
     }
 }
 
-// ランダムな問題インデックスの取得
+// 0 〜 total_count-1 からランダムなインデックスを取得
 EMSCRIPTEN_KEEPALIVE
 int get_random_index(int total_count) {
     if (total_count <= 0) return 0;
