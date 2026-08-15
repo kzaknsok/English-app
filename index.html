@@ -1,53 +1,196 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- スマホ対応に必須の viewport 設定 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <title>C-Core English Immersion (Wasm Mode)</title>
   <style>
-    * { box-sizing: border-box; margin: 0; padding: 0; }
+    * { 
+      box-sizing: border-box; 
+      margin: 0; 
+      padding: 0; 
+    }
+
     body {
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-      background-color: #0b132b; color: #e0e1dd;
-      display: flex; justify-content: center; align-items: center;
-      min-height: 100vh; padding: 20px;
+      background-color: #0b132b; 
+      color: #e0e1dd;
+      display: flex; 
+      justify-content: center; 
+      align-items: center;
+      min-height: 100vh; 
+      padding: 16px; /* スマホ用に余白を少し調整 */
     }
+
     .card {
-      background: #1c2541; border: 1px solid #2a3d66; border-radius: 24px;
+      background: #1c2541; 
+      border: 1px solid #2a3d66; 
+      border-radius: 24px;
       box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
-      max-width: 520px; width: 100%; padding: 36px 28px;
+      max-width: 520px; 
+      width: 100%; 
+      padding: 28px 20px; /* スマホで窮屈にならないように調整 */
+      position: relative;
     }
-    .top-bar { display: flex; justify-content: space-between; align-items: center; margin-bottom: 24px; }
+
+    .top-bar { 
+      display: flex; 
+      justify-content: space-between; 
+      align-items: center; 
+      margin-bottom: 20px; 
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
     .scene-badge {
-      background: rgba(72, 149, 239, 0.15); color: #4895ef; font-size: 0.75rem;
-      font-weight: 700; padding: 6px 14px; border-radius: 20px; border: 1px solid rgba(72, 149, 239, 0.3);
+      background: rgba(72, 149, 239, 0.15); 
+      color: #4895ef; 
+      font-size: 0.75rem;
+      font-weight: 700; 
+      padding: 6px 12px; 
+      border-radius: 20px; 
+      border: 1px solid rgba(72, 149, 239, 0.3);
       text-transform: uppercase;
     }
+
     .mode-badge {
-      background: rgba(74, 222, 128, 0.15); color: #4ade80; font-size: 0.75rem;
-      font-weight: 700; padding: 6px 12px; border-radius: 20px; border: 1px solid rgba(74, 222, 128, 0.3);
+      background: rgba(74, 222, 128, 0.15); 
+      color: #4ade80; 
+      font-size: 0.75rem;
+      font-weight: 700; 
+      padding: 6px 12px; 
+      border-radius: 20px; 
+      border: 1px solid rgba(74, 222, 128, 0.3);
     }
-    .score-tracker { font-size: 0.85rem; font-weight: 700; color: #4cc9f0; }
-    .en-display { font-size: 1.45rem; font-weight: 600; color: #ffffff; line-height: 1.6; min-height: 90px; margin-bottom: 20px; }
-    .blank { color: #4cc9f0; border-bottom: 3px solid #4cc9f0; padding: 0 10px; display: inline-block; min-width: 90px; text-align: center; }
+
+    .score-tracker { 
+      font-size: 0.85rem; 
+      font-weight: 700; 
+      color: #4cc9f0; 
+    }
+
+    .en-display { 
+      font-size: 1.35rem; 
+      font-weight: 600; 
+      color: #ffffff; 
+      line-height: 1.6; 
+      min-height: 80px; 
+      margin-bottom: 20px; 
+      word-break: break-word; /* 長い単語の崩れ防止 */
+    }
+
+    .blank { 
+      color: #4cc9f0; 
+      border-bottom: 3px solid #4cc9f0; 
+      padding: 0 8px; 
+      display: inline-block; 
+      min-width: 70px; 
+      text-align: center; 
+    }
+
     .blank.correct { color: #4ade80; border-bottom-color: #4ade80; }
     .blank.incorrect { color: #f72585; border-bottom-color: #f72585; }
+
     .feedback-banner {
-      min-height: 48px; border-radius: 12px; display: flex; align-items: center; justify-content: center;
-      font-weight: 700; margin-bottom: 20px; opacity: 0; transition: all 0.25s ease;
+      min-height: 48px; 
+      border-radius: 12px; 
+      display: flex; 
+      align-items: center; 
+      justify-content: center;
+      font-weight: 700; 
+      font-size: 0.95rem;
+      margin-bottom: 20px; 
+      opacity: 0; 
+      transition: all 0.25s ease;
+      padding: 0 10px;
+      text-align: center;
     }
-    .feedback-banner.show-correct { opacity: 1; background: rgba(74, 222, 128, 0.15); border: 1px solid rgba(74, 222, 128, 0.4); color: #4ade80; }
-    .feedback-banner.show-incorrect { opacity: 1; background: rgba(247, 37, 133, 0.15); border: 1px solid rgba(247, 37, 133, 0.4); color: #f72585; }
-    .options-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 28px; }
+
+    .feedback-banner.show-correct { 
+      opacity: 1; 
+      background: rgba(74, 222, 128, 0.15); 
+      border: 1px solid rgba(74, 222, 128, 0.4); 
+      color: #4ade80; 
+    }
+
+    .feedback-banner.show-incorrect { 
+      opacity: 1; 
+      background: rgba(247, 37, 133, 0.15); 
+      border: 1px solid rgba(247, 37, 133, 0.4); 
+      color: #f72585; 
+    }
+
+    /* レスポンシブ対応のグリッドレイアウト */
+    .options-grid { 
+      display: grid; 
+      grid-template-columns: 1fr 1fr; 
+      gap: 12px; 
+      margin-bottom: 24px; 
+    }
+
+    /* スマホ画面（幅480px以下）のスタイル調整 */
+    @media (max-width: 480px) {
+      .card {
+        padding: 20px 16px;
+      }
+      .en-display {
+        font-size: 1.15rem;
+      }
+      .options-grid {
+        grid-template-columns: 1fr; /* スマホではボタンを1列に縦並びにして押しやすくする */
+        gap: 10px;
+      }
+      .option-btn {
+        padding: 14px 10px;
+        font-size: 1rem;
+      }
+    }
+
     .option-btn {
-      background: #0b132b; color: #e0e1dd; border: 2px solid #2a3d66; border-radius: 14px;
-      padding: 16px 12px; font-size: 1.05rem; font-weight: 600; cursor: pointer; transition: all 0.2s ease;
+      background: #0b132b; 
+      color: #e0e1dd; 
+      border: 2px solid #2a3d66; 
+      border-radius: 14px;
+      padding: 16px 12px; 
+      font-size: 1.05rem; 
+      font-weight: 600; 
+      cursor: pointer; 
+      transition: all 0.2s ease;
+      -webkit-tap-highlight-color: transparent; /* スマホタップ時の青枠を消す */
     }
-    .option-btn.btn-correct { background: rgba(74, 222, 128, 0.2) !important; border-color: #4ade80 !important; color: #4ade80 !important; }
-    .option-btn.btn-incorrect { background: rgba(247, 37, 133, 0.2) !important; border-color: #f72585 !important; color: #f72585 !important; }
+
+    .option-btn:active:not(:disabled) {
+      transform: scale(0.97);
+    }
+
+    .option-btn.btn-correct { 
+      background: rgba(74, 222, 128, 0.2) !important; 
+      border-color: #4ade80 !important; 
+      color: #4ade80 !important; 
+    }
+
+    .option-btn.btn-incorrect { 
+      background: rgba(247, 37, 133, 0.2) !important; 
+      border-color: #f72585 !important; 
+      color: #f72585 !important; 
+    }
+
     .action-btn {
-      width: 100%; background: linear-gradient(135deg, #4361ee 0%, #3a0ca3 100%); color: #ffffff;
-      border: none; border-radius: 14px; padding: 18px; font-size: 1.05rem; font-weight: 700; cursor: pointer;
+      width: 100%; 
+      background: linear-gradient(135deg, #4361ee 0%, #3a0ca3 100%); 
+      color: #ffffff;
+      border: none; 
+      border-radius: 14px; 
+      padding: 16px; 
+      font-size: 1.05rem; 
+      font-weight: 700; 
+      cursor: pointer;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    .action-btn:active {
+      transform: scale(0.98);
     }
   </style>
 </head>
@@ -55,7 +198,7 @@
 
   <div class="card" id="app">
     <div class="top-bar">
-      <div style="display:flex; gap:8px;">
+      <div style="display:flex; gap:8px; align-items:center;">
         <span class="scene-badge" id="scene-badge">SCENE</span>
         <span class="mode-badge">WASM CORE</span>
       </div>
@@ -68,7 +211,6 @@
     <button class="action-btn" id="next-btn" onclick="nextQuestion()">Next Phrase ➔</button>
   </div>
 
-  <!-- Emscripten が生成する glue JS -->
   <script src="logic.js"></script>
 
   <script>
@@ -77,7 +219,6 @@
     let isAnswered = false;
     let streakCount = 0;
 
-    // Emscripten (Wasm) の準備完了イベント
     Module.onRuntimeInitialized = async () => {
       Module._init_rand();
       const res = await fetch('questions.json');
@@ -93,7 +234,6 @@
       banner.className = "feedback-banner";
       banner.textContent = "";
 
-      // C言語の関数 _get_random_index を呼び出し！
       const idx = Module._get_random_index(questionsData.length);
       currentData = questionsData[idx];
 
@@ -103,13 +243,13 @@
     function renderCard(data) {
       document.getElementById("scene-badge").textContent = data.sceneName || data.sceneId;
 
-      const enHtml = data.en.replace("%s", `<span class="blank" id="blank-target">_____</span>`);
+      const enTemplate = data.en_template || data.en || "%s";
+      const enHtml = enTemplate.replace("%s", `<span class="blank" id="blank-target">_____</span>`);
       document.getElementById("en-display").innerHTML = enHtml;
 
       const options = [...data.options];
       const count = options.length;
 
-      // C言語のメモリ領域を確保してシャッフル関数 _shuffle_indices を実行！
       const ptr = Module._malloc(count * 4);
       for (let i = 0; i < count; i++) {
         Module.setValue(ptr + i * 4, i, 'i32');
@@ -122,7 +262,7 @@
         const shuffledIdx = Module.getValue(ptr + i * 4, 'i32');
         shuffledOptions.push(options[shuffledIdx]);
       }
-      Module._free(ptr); // メモリ解放
+      Module._free(ptr);
 
       const grid = document.getElementById("options-grid");
       grid.innerHTML = "";
@@ -140,8 +280,10 @@
       if (isAnswered) return;
       isAnswered = true;
 
-      const correctAnswer = currentData.options[0];
+      // 1. 正解の判定ロジック修正（correct_option または options[0] を参照）
+      const correctAnswer = currentData.correct_option || currentData.options[0];
       const isCorrect = (selectedWord === correctAnswer);
+      
       const blank = document.getElementById("blank-target");
       const banner = document.getElementById("feedback-banner");
 
