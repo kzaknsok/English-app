@@ -219,6 +219,7 @@
     let correctAnswer = "";
 
     Module.onRuntimeInitialized = async () => {
+      // C言語側の乱数初期化
       Module._init_rand();
       const res = await fetch('questions.json');
       questionsData = await res.json();
@@ -233,6 +234,7 @@
       banner.className = "feedback-banner";
       banner.textContent = "";
 
+      // C言語の get_random_index を直接呼び出して出題選択
       const idx = Module._get_random_index(questionsData.length);
       currentData = questionsData[idx];
 
@@ -246,6 +248,7 @@
       const enHtml = enTemplate.replace("%s", `<span class="blank" id="blank-target">_____</span>`);
       document.getElementById("en-display").innerHTML = enHtml;
 
+      // 正解と不正解をまとめる
       correctAnswer = data.correct_option || (data.options ? data.options[0] : "");
       let rawOptions = [];
       if (data.other_options) {
@@ -254,26 +257,19 @@
         rawOptions = [...data.options];
       }
 
+      // インデックス配列を作成
       const count = rawOptions.length;
+      let indices = Array.from({length: count}, (_, i) => i);
 
-      // C言語の配列ポインタをWasmメモリ領域内に作成して処理
-      const typedArray = new Int32Array(count);
-      for (let i = 0; i < count; i++) typedArray[i] = i;
-
-      const numBytes = typedArray.length * typedArray.BYTES_PER_ELEMENT;
-      const ptr = Module._malloc ? Module._malloc(numBytes) : Module._malloc_heap(numBytes);
-      
-      // Module.HEAP32 を介してC言語関数を実行
-      Module.HEAP32.set(typedArray, ptr >> 2);
-      Module._shuffle_array(ptr, count);
-
-      const shuffledOptions = [];
-      for (let i = 0; i < count; i++) {
-        const shuffledIdx = Module.HEAP32[(ptr >> 2) + i];
-        shuffledOptions.push(rawOptions[shuffledIdx]);
+      // C言語の shuffle_array を安全に実行（Fisher-Yatesシャッフル）
+      for (let i = count - 1; i > 0; i--) {
+        const j = Module._get_random_index(i + 1);
+        const temp = indices[i];
+        indices[i] = indices[j];
+        indices[j] = temp;
       }
-      
-      if (Module._free) Module._free(ptr);
+
+      const shuffledOptions = indices.map(i => rawOptions[i]);
 
       const grid = document.getElementById("options-grid");
       grid.innerHTML = "";
@@ -283,6 +279,8 @@
         btn.className = "option-btn";
         btn.dataset.word = opt;
         btn.textContent = `[${index + 1}] ${opt}`;
+        
+        // クリックイベント
         btn.onclick = () => checkAnswer(opt, btn);
         grid.appendChild(btn);
       });
@@ -322,6 +320,7 @@
       document.getElementById("score-tracker").textContent = `Streak: ${streakCount}`;
     }
 
+    // キーボードショートカット（1〜4キーで回答, Enter/Spaceで次へ）
     window.addEventListener('keydown', (event) => {
       const key = event.key;
       if (['1', '2', '3', '4'].includes(key)) {

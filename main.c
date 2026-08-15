@@ -8,7 +8,7 @@ void init_rand() {
     srand((unsigned int)time(NULL));
 }
 
-// 配列のシャッフル（JavaScript側のInt32Arrayを直接操作）
+// Fisher-Yates シャッフル
 EMSCRIPTEN_KEEPALIVE
 void shuffle_array(int *arr, int size) {
     if (size <= 1) return;
@@ -20,7 +20,7 @@ void shuffle_array(int *arr, int size) {
     }
 }
 
-// ランダムなインデックスを取得
+// ランダムなインデックスの取得
 EMSCRIPTEN_KEEPALIVE
 int get_random_index(int total_count) {
     if (total_count <= 0) return 0;
