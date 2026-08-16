@@ -92,9 +92,10 @@
     .blank.incorrect { color: #f72585; border-bottom-color: #f72585; }
 
     .feedback-banner {
-      min-height: 48px; 
+      min-height: 54px; 
       border-radius: 12px; 
       display: flex; 
+      flex-direction: column;
       align-items: center; 
       justify-content: center;
       font-weight: 700; 
@@ -102,8 +103,15 @@
       margin-bottom: 20px; 
       opacity: 0; 
       transition: all 0.25s ease;
-      padding: 0 10px;
+      padding: 10px;
       text-align: center;
+      gap: 4px;
+    }
+
+    .feedback-banner .ja-text {
+      font-size: 0.85rem;
+      font-weight: 400;
+      opacity: 0.9;
     }
 
     .feedback-banner.show-correct { 
@@ -219,7 +227,6 @@
     let correctAnswer = "";
 
     Module.onRuntimeInitialized = async () => {
-      // C言語側の乱数初期化
       Module._init_rand();
       const res = await fetch('questions.json');
       questionsData = await res.json();
@@ -232,9 +239,8 @@
       isAnswered = false;
       const banner = document.getElementById("feedback-banner");
       banner.className = "feedback-banner";
-      banner.textContent = "";
+      banner.innerHTML = "";
 
-      // C言語の get_random_index を直接呼び出して出題選択
       const idx = Module._get_random_index(questionsData.length);
       currentData = questionsData[idx];
 
@@ -248,7 +254,6 @@
       const enHtml = enTemplate.replace("%s", `<span class="blank" id="blank-target">_____</span>`);
       document.getElementById("en-display").innerHTML = enHtml;
 
-      // 正解と不正解をまとめる
       correctAnswer = data.correct_option || (data.options ? data.options[0] : "");
       let rawOptions = [];
       if (data.other_options) {
@@ -257,11 +262,9 @@
         rawOptions = [...data.options];
       }
 
-      // インデックス配列を作成
       const count = rawOptions.length;
       let indices = Array.from({length: count}, (_, i) => i);
 
-      // C言語の shuffle_array を安全に実行（Fisher-Yatesシャッフル）
       for (let i = count - 1; i > 0; i--) {
         const j = Module._get_random_index(i + 1);
         const temp = indices[i];
@@ -280,7 +283,6 @@
         btn.dataset.word = opt;
         btn.textContent = `[${index + 1}] ${opt}`;
         
-        // クリックイベント
         btn.onclick = () => checkAnswer(opt, btn);
         grid.appendChild(btn);
       });
@@ -304,23 +306,25 @@
 
       if (blank) blank.textContent = selectedWord;
 
+      // 日本語訳がある場合は取得
+      const jaTranslation = currentData.ja ? `<div class="ja-text">💬 訳: ${currentData.ja}</div>` : '';
+
       if (isCorrect) {
         if (blank) blank.classList.add("correct");
         banner.className = "feedback-banner show-correct";
-        banner.textContent = "🎉 Excellent! Correct!";
+        banner.innerHTML = `<div>🎉 Excellent! Correct!</div>${jaTranslation}`;
         streakCount++;
       } else {
         if (blank) blank.classList.add("incorrect");
         if (btnElement) btnElement.classList.add("btn-incorrect");
         banner.className = "feedback-banner show-incorrect";
-        banner.textContent = `❌ Oops! Correct answer: ${correctAnswer}`;
+        banner.innerHTML = `<div>❌ Correct answer: <strong>${correctAnswer}</strong></div>${jaTranslation}`;
         streakCount = 0;
       }
 
       document.getElementById("score-tracker").textContent = `Streak: ${streakCount}`;
     }
 
-    // キーボードショートカット（1〜4キーで回答, Enter/Spaceで次へ）
     window.addEventListener('keydown', (event) => {
       const key = event.key;
       if (['1', '2', '3', '4'].includes(key)) {

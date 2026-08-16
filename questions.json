@@ -4,629 +4,719 @@
     "sceneName": "Casual Talk",
     "en": "Hey, can you %s me a sec?",
     "correct_option": "give",
-    "other_options": ["take", "get", "make"]
+    "other_options": ["take", "get", "make"],
+    "ja": "ちょっと時間くれない？"
   },
   {
     "sceneId": "scene_02",
     "sceneName": "Casual Talk",
-    "en": "I’ll %s you later, okay?",
-    "correct_option": "text",
-    "other_options": ["talk", "call", "message"]
+    "en": "I'm %s down to hang out later.",
+    "correct_option": "totally",
+    "other_options": ["full", "pretty", "really"],
+    "ja": "後で遊ぶの全然OKだよ。"
   },
   {
     "sceneId": "scene_03",
     "sceneName": "Soliloquy",
-    "en": "Man, I really need to %s up my room.",
-    "correct_option": "clean",
-    "other_options": ["clear", "fix", "make"]
+    "en": "I should %s cleaning my room…",
+    "correct_option": "start",
+    "other_options": ["stop", "keep", "try"],
+    "ja": "部屋の掃除始めないとな…"
   },
   {
     "sceneId": "scene_04",
     "sceneName": "Soliloquy",
-    "en": "I should %s a break… I’m tired.",
-    "correct_option": "take",
-    "other_options": ["get", "make", "have"]
+    "en": "Why do I always %s things off?",
+    "correct_option": "put",
+    "other_options": ["take", "make", "set"],
+    "ja": "なんでいつも後回しにしちゃうんだろ…"
   },
   {
     "sceneId": "scene_05",
     "sceneName": "Ordering",
-    "en": "Can I %s a latte, please?",
+    "en": "Can I %s a caramel latte?",
     "correct_option": "get",
-    "other_options": ["take", "have", "order"]
+    "other_options": ["take", "have", "make"],
+    "ja": "キャラメルラテをお願いできますか？"
   },
   {
     "sceneId": "scene_06",
     "sceneName": "Ordering",
-    "en": "Could you %s it extra hot?",
+    "en": "Could you %s it iced, please?",
     "correct_option": "make",
-    "other_options": ["do", "get", "heat"]
+    "other_options": ["do", "turn", "change"],
+    "ja": "アイスにしてもらえますか？"
   },
   {
     "sceneId": "scene_07",
     "sceneName": "Directions",
-    "en": "Just %s straight and you’ll see it.",
-    "correct_option": "go",
-    "other_options": ["walk", "move", "head"]
+    "en": "It's just %s the corner.",
+    "correct_option": "around",
+    "other_options": ["over", "under", "across"],
+    "ja": "角を曲がったすぐそこだよ。"
   },
   {
     "sceneId": "scene_08",
     "sceneName": "Directions",
-    "en": "It’s right %s the corner.",
-    "correct_option": "around",
-    "other_options": ["on", "at", "near"]
+    "en": "Go straight and %s a left.",
+    "correct_option": "take",
+    "other_options": ["make", "get", "turn"],
+    "ja": "まっすぐ行って左に曲がって。"
   },
   {
     "sceneId": "scene_09",
     "sceneName": "Shopping",
-    "en": "Do you %s this in a bigger size?",
+    "en": "Do you %s this in a smaller size?",
     "correct_option": "have",
-    "other_options": ["get", "carry", "sell"]
+    "other_options": ["get", "take", "keep"],
+    "ja": "これの小さいサイズありますか？"
   },
   {
     "sceneId": "scene_10",
     "sceneName": "Shopping",
     "en": "Can I %s this on?",
     "correct_option": "try",
-    "other_options": ["put", "wear", "fit"]
+    "other_options": ["put", "wear", "test"],
+    "ja": "これ試着してもいいですか？"
   },
   {
     "sceneId": "scene_11",
     "sceneName": "Emotions",
-    "en": "I’m so %s out today.",
-    "correct_option": "stressed",
-    "other_options": ["stress", "stressful", "stressy"]
+    "en": "I'm so %s out today.",
+    "correct_option": "tired",
+    "other_options": ["boring", "sleep", "weak"],
+    "ja": "今日はめっちゃ疲れてる。"
   },
   {
     "sceneId": "scene_12",
     "sceneName": "Emotions",
-    "en": "I’m %s excited for tomorrow!",
-    "correct_option": "so",
-    "other_options": ["very", "too", "much"]
+    "en": "That movie really %s me up.",
+    "correct_option": "cheered",
+    "other_options": ["charged", "pushed", "kept"],
+    "ja": "あの映画でめっちゃ元気出た。"
   },
   {
     "sceneId": "scene_13",
     "sceneName": "Casual Talk",
-    "en": "Let’s %s up later.",
-    "correct_option": "meet",
-    "other_options": ["see", "hang", "talk"]
+    "en": "You wanna %s out later?",
+    "correct_option": "hang",
+    "other_options": ["stay", "go", "come"],
+    "ja": "後で遊ばない？"
   },
   {
     "sceneId": "scene_14",
     "sceneName": "Casual Talk",
-    "en": "I %s you know when I’m done.",
+    "en": "Let me %s you know when I'm free.",
     "correct_option": "let",
-    "other_options": ["make", "give", "tell"]
+    "other_options": ["make", "give", "send"],
+    "ja": "暇になったら連絡するね。"
   },
   {
     "sceneId": "scene_15",
     "sceneName": "Soliloquy",
-    "en": "I totally %s my keys again…",
-    "correct_option": "lost",
-    "other_options": ["lose", "missed", "forgot"]
+    "en": "I need to %s a break.",
+    "correct_option": "take",
+    "other_options": ["get", "make", "have"],
+    "ja": "ちょっと休憩しないとな。"
   },
   {
     "sceneId": "scene_16",
     "sceneName": "Soliloquy",
-    "en": "I should really %s cooking more.",
-    "correct_option": "start",
-    "other_options": ["try", "do", "make"]
+    "en": "I can't %s what I was doing…",
+    "correct_option": "remember",
+    "other_options": ["remind", "recall", "repeat"],
+    "ja": "何してたか思い出せない…"
   },
   {
     "sceneId": "scene_17",
     "sceneName": "Ordering",
-    "en": "Can I %s this to go?",
+    "en": "Could I %s the same thing?",
     "correct_option": "get",
-    "other_options": ["take", "make", "order"]
+    "other_options": ["take", "order", "make"],
+    "ja": "同じものをお願いできますか？"
   },
   {
     "sceneId": "scene_18",
     "sceneName": "Ordering",
-    "en": "Could you %s me some water?",
-    "correct_option": "bring",
-    "other_options": ["take", "get", "give"]
+    "en": "Can you %s it to go?",
+    "correct_option": "make",
+    "other_options": ["turn", "take", "give"],
+    "ja": "テイクアウトにしてもらえますか？"
   },
   {
     "sceneId": "scene_19",
     "sceneName": "Directions",
-    "en": "It’s %s across from the station.",
-    "correct_option": "right",
-    "other_options": ["just", "straight", "near"]
+    "en": "It's %s minutes from here.",
+    "correct_option": "five",
+    "other_options": ["few", "some", "short"],
+    "ja": "ここから5分くらいだよ。"
   },
   {
     "sceneId": "scene_20",
     "sceneName": "Directions",
-    "en": "You’ll %s it on your left.",
-    "correct_option": "see",
-    "other_options": ["find", "look", "spot"]
+    "en": "Just %s walking straight.",
+    "correct_option": "keep",
+    "other_options": ["stay", "take", "go"],
+    "ja": "そのまままっすぐ進んで。"
   },
   {
     "sceneId": "scene_21",
     "sceneName": "Shopping",
-    "en": "How %s is this one?",
-    "correct_option": "much",
-    "other_options": ["many", "more", "cost"]
+    "en": "Do you %s any discounts today?",
+    "correct_option": "have",
+    "other_options": ["give", "take", "sell"],
+    "ja": "今日は割引ありますか？"
   },
   {
     "sceneId": "scene_22",
     "sceneName": "Shopping",
-    "en": "Do you %s any discounts today?",
-    "correct_option": "have",
-    "other_options": ["give", "offer", "do"]
+    "en": "Can I %s with card?",
+    "correct_option": "pay",
+    "other_options": ["buy", "take", "use"],
+    "ja": "カードで支払えますか？"
   },
   {
     "sceneId": "scene_23",
     "sceneName": "Emotions",
-    "en": "I’m %s of tired.",
-    "correct_option": "kind",
-    "other_options": ["sort", "little", "bit"]
+    "en": "I'm kinda %s about tomorrow.",
+    "correct_option": "nervous",
+    "other_options": ["scared", "afraid", "worried"],
+    "ja": "明日ちょっと緊張するな。"
   },
   {
     "sceneId": "scene_24",
     "sceneName": "Emotions",
-    "en": "I’m really %s up about it.",
-    "correct_option": "bummed",
-    "other_options": ["bum", "sad", "down"]
+    "en": "That really %s my day.",
+    "correct_option": "made",
+    "other_options": ["took", "kept", "gave"],
+    "ja": "それで今日めっちゃ嬉しくなった。"
   },
   {
     "sceneId": "scene_25",
     "sceneName": "Casual Talk",
-    "en": "Let me %s my stuff real quick.",
-    "correct_option": "grab",
-    "other_options": ["take", "get", "pick"]
+    "en": "Can you %s me up later?",
+    "correct_option": "hit",
+    "other_options": ["call", "send", "text"],
+    "ja": "後で連絡して。"
   },
   {
     "sceneId": "scene_26",
     "sceneName": "Casual Talk",
-    "en": "I’ll %s you in a bit.",
-    "correct_option": "see",
-    "other_options": ["meet", "call", "text"]
+    "en": "I'm %s heading out now.",
+    "correct_option": "actually",
+    "other_options": ["really", "pretty", "totally"],
+    "ja": "実はもう出るところなんだ。"
   },
   {
     "sceneId": "scene_27",
     "sceneName": "Soliloquy",
-    "en": "I need to %s down for a minute.",
-    "correct_option": "sit",
-    "other_options": ["set", "seat", "sit up"]
+    "en": "I should %s something for dinner.",
+    "correct_option": "cook",
+    "other_options": ["make", "take", "get"],
+    "ja": "夕飯なんか作らないとな。"
   },
   {
     "sceneId": "scene_28",
     "sceneName": "Soliloquy",
-    "en": "Let me %s what’s in the fridge.",
-    "correct_option": "check",
-    "other_options": ["look", "see", "find"]
+    "en": "I can't %s where I put my keys.",
+    "correct_option": "find",
+    "other_options": ["look", "search", "get"],
+    "ja": "鍵どこ置いたか分からない…"
   },
   {
     "sceneId": "scene_29",
     "sceneName": "Ordering",
-    "en": "Can I %s the same thing as him?",
+    "en": "Could you %s me some water?",
     "correct_option": "get",
-    "other_options": ["take", "order", "have"]
+    "other_options": ["take", "bring", "give"],
+    "ja": "お水もらえますか？"
   },
   {
     "sceneId": "scene_30",
     "sceneName": "Emotions",
-    "en": "I’m %s pumped for tonight!",
-    "correct_option": "so",
-    "other_options": ["very", "too", "much"]
+    "en": "I'm so %s right now.",
+    "correct_option": "frustrated",
+    "other_options": ["frustrating", "frustrate", "frustration"],
+    "ja": "今めっちゃイライラしてる。"
   },
   {
     "sceneId": "scene_31",
     "sceneName": "Casual Talk",
-    "en": "Hey, wanna %s out later?",
-    "correct_option": "hang",
-    "other_options": ["meet", "stay", "sit"]
+    "en": "Yo, did you %s what happened yesterday?",
+    "correct_option": "hear",
+    "other_options": ["listen", "tell", "talk"],
+    "ja": "昨日のこと聞いた？"
   },
   {
     "sceneId": "scene_32",
     "sceneName": "Casual Talk",
-    "en": "Can you %s me that charger?",
-    "correct_option": "pass",
-    "other_options": ["give", "hand", "send"]
+    "en": "I'm gonna %s by your place later.",
+    "correct_option": "stop",
+    "other_options": ["stay", "walk", "sit"],
+    "ja": "後でそっち寄るね。"
   },
   {
     "sceneId": "scene_33",
     "sceneName": "Soliloquy",
-    "en": "I really need to %s my laundry today.",
+    "en": "I really need to %s my laundry.",
     "correct_option": "do",
-    "other_options": ["make", "wash", "clean"]
+    "other_options": ["make", "take", "wash"],
+    "ja": "洗濯しないとな…。"
   },
   {
     "sceneId": "scene_34",
     "sceneName": "Soliloquy",
-    "en": "Let me %s a quick break.",
-    "correct_option": "take",
-    "other_options": ["get", "have", "make"]
+    "en": "Why did I %s so late last night…",
+    "correct_option": "stay up",
+    "other_options": ["wake", "sleep", "go"],
+    "ja": "なんで昨日あんなに夜更かししたんだ…。"
   },
   {
     "sceneId": "scene_35",
     "sceneName": "Ordering",
-    "en": "Can I %s the same drink again?",
+    "en": "Can I %s a large fries?",
     "correct_option": "get",
-    "other_options": ["take", "order", "have"]
+    "other_options": ["take", "eat", "order"],
+    "ja": "ポテトのLサイズください。"
   },
   {
     "sceneId": "scene_36",
     "sceneName": "Ordering",
-    "en": "Could you %s it without sugar?",
-    "correct_option": "make",
-    "other_options": ["do", "prepare", "serve"]
+    "en": "Could you %s the sauce on the side?",
+    "correct_option": "put",
+    "other_options": ["take", "make", "leave"],
+    "ja": "ソースは別にしてもらえますか？"
   },
   {
     "sceneId": "scene_37",
     "sceneName": "Directions",
-    "en": "Just %s left at the next light.",
-    "correct_option": "turn",
-    "other_options": ["go", "move", "shift"]
+    "en": "You’ll %s it on your right.",
+    "correct_option": "see",
+    "other_options": ["look", "watch", "find"],
+    "ja": "右側に見えてくるよ。"
   },
   {
     "sceneId": "scene_38",
     "sceneName": "Directions",
-    "en": "It’s %s next to the bookstore.",
-    "correct_option": "right",
-    "other_options": ["just", "almost", "close"]
+    "en": "Just %s the signs. It’s easy.",
+    "correct_option": "follow",
+    "other_options": ["take", "go", "walk"],
+    "ja": "看板に従って行けば簡単だよ。"
   },
   {
     "sceneId": "scene_39",
     "sceneName": "Shopping",
-    "en": "Do you %s this in any other colors?",
+    "en": "Do you %s any other colors?",
     "correct_option": "have",
-    "other_options": ["sell", "carry", "offer"]
+    "other_options": ["sell", "take", "keep"],
+    "ja": "他の色ありますか？"
   },
   {
     "sceneId": "scene_40",
     "sceneName": "Shopping",
     "en": "Can I %s a refund for this?",
     "correct_option": "get",
-    "other_options": ["take", "receive", "have"]
+    "other_options": ["take", "pay", "buy"],
+    "ja": "これ返金できますか？"
   },
   {
     "sceneId": "scene_41",
     "sceneName": "Emotions",
-    "en": "I’m %s annoyed right now.",
-    "correct_option": "so",
-    "other_options": ["very", "too", "much"]
+    "en": "I'm %s excited for the weekend.",
+    "correct_option": "super",
+    "other_options": ["very", "too", "much"],
+    "ja": "週末めっちゃ楽しみ。"
   },
   {
     "sceneId": "scene_42",
     "sceneName": "Emotions",
-    "en": "I’m really %s about the test.",
-    "correct_option": "nervous",
-    "other_options": ["nervy", "nerve", "nervously"]
+    "en": "That totally %s my mood.",
+    "correct_option": "ruined",
+    "other_options": ["broke", "lost", "fell"],
+    "ja": "それで気分が完全に台無しになった。"
   },
   {
     "sceneId": "scene_43",
     "sceneName": "Casual Talk",
-    "en": "Let’s %s up tomorrow morning.",
-    "correct_option": "meet",
-    "other_options": ["see", "hang", "talk"]
+    "en": "You should %s me that playlist.",
+    "correct_option": "send",
+    "other_options": ["give", "take", "show"],
+    "ja": "そのプレイリスト送ってよ。"
   },
   {
     "sceneId": "scene_44",
     "sceneName": "Casual Talk",
-    "en": "I’ll %s you when I get home.",
-    "correct_option": "text",
-    "other_options": ["call", "message", "ping"]
+    "en": "Let’s %s up later and talk.",
+    "correct_option": "meet",
+    "other_options": ["go", "stay", "sit"],
+    "ja": "後で会って話そうよ。"
   },
   {
     "sceneId": "scene_45",
     "sceneName": "Soliloquy",
-    "en": "I totally %s my wallet somewhere.",
-    "correct_option": "lost",
-    "other_options": ["lose", "forgot", "missed"]
+    "en": "I should really %s drinking less coffee.",
+    "correct_option": "start",
+    "other_options": ["stop", "keep", "try"],
+    "ja": "コーヒー減らすようにしないとな…。"
   },
   {
     "sceneId": "scene_46",
     "sceneName": "Soliloquy",
-    "en": "I should %s organizing my desk.",
-    "correct_option": "start",
-    "other_options": ["begin", "try", "do"]
+    "en": "I need to %s my desk. It's a mess.",
+    "correct_option": "clean",
+    "other_options": ["take", "make", "fix"],
+    "ja": "机片付けないと。散らかってる…。"
   },
   {
     "sceneId": "scene_47",
     "sceneName": "Ordering",
-    "en": "Can I %s a large iced tea?",
-    "correct_option": "get",
-    "other_options": ["take", "order", "have"]
+    "en": "Can you %s it extra spicy?",
+    "correct_option": "make",
+    "other_options": ["turn", "give", "put"],
+    "ja": "辛めにしてもらえますか？"
   },
   {
     "sceneId": "scene_48",
     "sceneName": "Ordering",
-    "en": "Could you %s me the menu?",
-    "correct_option": "bring",
-    "other_options": ["take", "give", "show"]
+    "en": "I'd like to %s an iced tea.",
+    "correct_option": "order",
+    "other_options": ["take", "get", "drink"],
+    "ja": "アイスティーを注文したいです。"
   },
   {
     "sceneId": "scene_49",
     "sceneName": "Directions",
-    "en": "You’ll %s it right ahead.",
-    "correct_option": "see",
-    "other_options": ["find", "spot", "look"]
+    "en": "It's %s across the street.",
+    "correct_option": "right",
+    "other_options": ["left", "over", "down"],
+    "ja": "通りのすぐ向こう側だよ。"
   },
   {
     "sceneId": "scene_50",
     "sceneName": "Directions",
-    "en": "It’s %s behind the big building.",
-    "correct_option": "just",
-    "other_options": ["right", "straight", "near"]
+    "en": "Just %s the elevator to the third floor.",
+    "correct_option": "take",
+    "other_options": ["go", "walk", "ride"],
+    "ja": "エレベーターで3階に行って。"
   },
   {
     "sceneId": "scene_51",
     "sceneName": "Shopping",
-    "en": "How %s does this cost?",
-    "correct_option": "much",
-    "other_options": ["many", "more", "most"]
+    "en": "Can I %s this delivered?",
+    "correct_option": "get",
+    "other_options": ["take", "buy", "send"],
+    "ja": "これ配送できますか？"
   },
   {
     "sceneId": "scene_52",
     "sceneName": "Shopping",
-    "en": "Do you %s any deals today?",
-    "correct_option": "have",
-    "other_options": ["offer", "give", "do"]
+    "en": "Do you %s gift wrapping?",
+    "correct_option": "offer",
+    "other_options": ["take", "sell", "give"],
+    "ja": "ギフト包装はありますか？"
   },
   {
     "sceneId": "scene_53",
     "sceneName": "Emotions",
-    "en": "I’m %s of upset.",
-    "correct_option": "kind",
-    "other_options": ["sort", "bit", "little"]
+    "en": "I'm %s overwhelmed right now.",
+    "correct_option": "kinda",
+    "other_options": ["very", "too", "much"],
+    "ja": "ちょっと今いっぱいいっぱい。"
   },
   {
     "sceneId": "scene_54",
     "sceneName": "Emotions",
-    "en": "I’m really %s out lately.",
-    "correct_option": "burned",
-    "other_options": ["burn", "burning", "burnt"]
+    "en": "That really %s me smile.",
+    "correct_option": "made",
+    "other_options": ["took", "kept", "gave"],
+    "ja": "それで本当に笑顔になった。"
   },
   {
     "sceneId": "scene_55",
     "sceneName": "Casual Talk",
-    "en": "Let me %s my jacket first.",
-    "correct_option": "grab",
-    "other_options": ["take", "pick", "get"]
+    "en": "Can you %s me the link?",
+    "correct_option": "send",
+    "other_options": ["take", "give", "show"],
+    "ja": "リンク送ってくれる？"
   },
   {
     "sceneId": "scene_56",
     "sceneName": "Casual Talk",
-    "en": "I’ll %s you later tonight.",
-    "correct_option": "call",
-    "other_options": ["text", "meet", "see"]
+    "en": "I'm %s heading to the station now.",
+    "correct_option": "just",
+    "other_options": ["really", "pretty", "totally"],
+    "ja": "今ちょうど駅に向かってるところ。"
   },
   {
     "sceneId": "scene_57",
     "sceneName": "Soliloquy",
-    "en": "I need to %s down for a bit.",
-    "correct_option": "lie",
-    "other_options": ["lay", "sit", "rest"]
+    "en": "I should %s something healthy today.",
+    "correct_option": "eat",
+    "other_options": ["take", "get", "cook"],
+    "ja": "今日は何か健康的なもの食べないとな…。"
   },
   {
     "sceneId": "scene_58",
     "sceneName": "Soliloquy",
-    "en": "Let me %s what time it is.",
-    "correct_option": "check",
-    "other_options": ["see", "look", "find"]
+    "en": "Where did I %s my phone…",
+    "correct_option": "put",
+    "other_options": ["take", "leave", "keep"],
+    "ja": "スマホどこ置いたっけ…。"
   },
   {
     "sceneId": "scene_59",
     "sceneName": "Ordering",
-    "en": "Can I %s the same thing she got?",
+    "en": "Could I %s a glass of water?",
     "correct_option": "get",
-    "other_options": ["take", "order", "have"]
+    "other_options": ["take", "drink", "order"],
+    "ja": "お水もらえますか？"
   },
   {
     "sceneId": "scene_60",
     "sceneName": "Emotions",
-    "en": "I’m %s hyped for the weekend!",
-    "correct_option": "so",
-    "other_options": ["very", "too", "much"]
+    "en": "I'm so %s right now.",
+    "correct_option": "pumped",
+    "other_options": ["pump", "pumping", "pumpful"],
+    "ja": "今めっちゃテンション上がってる。"
   },
   {
     "sceneId": "scene_61",
     "sceneName": "Casual Talk",
-    "en": "Hey, can you %s me what time we’re meeting?",
-    "correct_option": "tell",
-    "other_options": ["say", "talk", "share"]
+    "en": "Hey, can you %s me later about the plan?",
+    "correct_option": "text",
+    "other_options": ["call", "talk", "tell"],
+    "ja": "後で予定についてメッセージくれる？"
   },
   {
     "sceneId": "scene_62",
     "sceneName": "Casual Talk",
-    "en": "I’m gonna %s a quick shower.",
-    "correct_option": "take",
-    "other_options": ["get", "make", "do"]
+    "en": "I'm %s heading out. You coming?",
+    "correct_option": "about",
+    "other_options": ["almost", "just", "nearly"],
+    "ja": "そろそろ出るけど、来る？"
   },
   {
     "sceneId": "scene_63",
     "sceneName": "Soliloquy",
-    "en": "I really need to %s my phone… battery’s dying.",
-    "correct_option": "charge",
-    "other_options": ["load", "fill", "power"]
+    "en": "I really need to %s my schedule.",
+    "correct_option": "fix",
+    "other_options": ["take", "make", "set"],
+    "ja": "スケジュール直さないとな…。"
   },
   {
     "sceneId": "scene_64",
     "sceneName": "Soliloquy",
-    "en": "Let me %s what’s going on outside.",
-    "correct_option": "see",
-    "other_options": ["look", "watch", "check"]
+    "en": "I should %s some water… I'm dehydrated.",
+    "correct_option": "drink",
+    "other_options": ["take", "get", "have"],
+    "ja": "水飲まないと…脱水気味だ。"
   },
   {
     "sceneId": "scene_65",
     "sceneName": "Ordering",
-    "en": "Can I %s a small fries with that?",
+    "en": "Can I %s a hot chocolate?",
     "correct_option": "get",
-    "other_options": ["take", "order", "add"]
+    "other_options": ["take", "drink", "order"],
+    "ja": "ホットチョコレートください。"
   },
   {
     "sceneId": "scene_66",
     "sceneName": "Ordering",
-    "en": "Could you %s it without onions?",
-    "correct_option": "make",
-    "other_options": ["do", "prepare", "serve"]
+    "en": "Could you %s the sugar a bit?",
+    "correct_option": "reduce",
+    "other_options": ["take", "cut", "drop"],
+    "ja": "砂糖少なめにしてもらえますか？"
   },
   {
     "sceneId": "scene_67",
     "sceneName": "Directions",
-    "en": "You need to %s right after the bridge.",
+    "en": "You need to %s right at the next light.",
     "correct_option": "turn",
-    "other_options": ["go", "move", "head"]
+    "other_options": ["go", "walk", "take"],
+    "ja": "次の信号で右に曲がって。"
   },
   {
     "sceneId": "scene_68",
     "sceneName": "Directions",
-    "en": "It’s %s across the street.",
+    "en": "It's %s behind that building.",
     "correct_option": "right",
-    "other_options": ["just", "straight", "near"]
+    "other_options": ["over", "just", "far"],
+    "ja": "あの建物のすぐ後ろだよ。"
   },
   {
     "sceneId": "scene_69",
     "sceneName": "Shopping",
-    "en": "Do you %s this in medium?",
+    "en": "Do you %s any deals today?",
     "correct_option": "have",
-    "other_options": ["carry", "sell", "offer"]
+    "other_options": ["give", "sell", "offer"],
+    "ja": "今日何かお得なセールありますか？"
   },
   {
     "sceneId": "scene_70",
     "sceneName": "Shopping",
-    "en": "Can I %s this for a different size?",
-    "correct_option": "exchange",
-    "other_options": ["change", "switch", "replace"]
+    "en": "Can I %s this in-store pickup?",
+    "correct_option": "choose",
+    "other_options": ["take", "buy", "get"],
+    "ja": "店頭受け取りにできますか？"
   },
   {
     "sceneId": "scene_71",
     "sceneName": "Emotions",
-    "en": "I’m %s excited but also nervous.",
+    "en": "I'm %s stressed out lately.",
     "correct_option": "kinda",
-    "other_options": ["sorta", "little", "bit"]
+    "other_options": ["very", "too", "much"],
+    "ja": "最近ちょっとストレス溜まってる。"
   },
   {
     "sceneId": "scene_72",
     "sceneName": "Emotions",
-    "en": "I’m really %s off today.",
-    "correct_option": "tired",
-    "other_options": ["tiring", "tire", "tiredly"]
+    "en": "That totally %s my confidence.",
+    "correct_option": "boosted",
+    "other_options": ["raised", "lifted", "pushed"],
+    "ja": "それで自信めっちゃついた。"
   },
   {
     "sceneId": "scene_73",
     "sceneName": "Casual Talk",
-    "en": "Let’s %s up before we head out.",
+    "en": "Let’s %s up tomorrow morning.",
     "correct_option": "meet",
-    "other_options": ["see", "hang", "talk"]
+    "other_options": ["go", "stay", "sit"],
+    "ja": "明日の朝会おうよ。"
   },
   {
     "sceneId": "scene_74",
     "sceneName": "Casual Talk",
-    "en": "I’ll %s you when I’m close.",
-    "correct_option": "text",
-    "other_options": ["call", "message", "ping"]
+    "en": "Can you %s me a ride?",
+    "correct_option": "give",
+    "other_options": ["take", "send", "bring"],
+    "ja": "車で送ってくれる？"
   },
   {
     "sceneId": "scene_75",
     "sceneName": "Soliloquy",
-    "en": "I totally %s my headphones again.",
-    "correct_option": "lost",
-    "other_options": ["lose", "forgot", "missed"]
+    "en": "I should %s my room before guests come.",
+    "correct_option": "clean",
+    "other_options": ["take", "make", "fix"],
+    "ja": "来客の前に部屋片付けないと…。"
   },
   {
     "sceneId": "scene_76",
     "sceneName": "Soliloquy",
-    "en": "I should %s cleaning this mess.",
-    "correct_option": "start",
-    "other_options": ["begin", "try", "do"]
+    "en": "I need to %s my emails.",
+    "correct_option": "check",
+    "other_options": ["look", "see", "read"],
+    "ja": "メール確認しないとな…。"
   },
   {
     "sceneId": "scene_77",
     "sceneName": "Ordering",
-    "en": "Can I %s a large smoothie?",
+    "en": "Could I %s a refill?",
     "correct_option": "get",
-    "other_options": ["take", "order", "have"]
+    "other_options": ["take", "drink", "order"],
+    "ja": "おかわりもらえますか？"
   },
   {
     "sceneId": "scene_78",
     "sceneName": "Ordering",
-    "en": "Could you %s me a straw?",
-    "correct_option": "bring",
-    "other_options": ["take", "give", "hand"]
+    "en": "Can you %s the ice out?",
+    "correct_option": "leave",
+    "other_options": ["take", "remove", "cut"],
+    "ja": "氷なしでお願いします。"
   },
   {
     "sceneId": "scene_79",
     "sceneName": "Directions",
-    "en": "You’ll %s it right after the park.",
-    "correct_option": "see",
-    "other_options": ["find", "spot", "look"]
+    "en": "It's %s next to the station.",
+    "correct_option": "right",
+    "other_options": ["over", "just", "far"],
+    "ja": "駅のすぐ隣だよ。"
   },
   {
     "sceneId": "scene_80",
     "sceneName": "Directions",
-    "en": "It’s %s behind the supermarket.",
-    "correct_option": "just",
-    "other_options": ["right", "straight", "near"]
+    "en": "Just %s the stairs to the second floor.",
+    "correct_option": "take",
+    "other_options": ["go", "walk", "ride"],
+    "ja": "階段で2階に行って。"
   },
   {
     "sceneId": "scene_81",
     "sceneName": "Shopping",
-    "en": "How %s is this jacket?",
-    "correct_option": "much",
-    "other_options": ["many", "more", "most"]
+    "en": "Can I %s this shipped overseas?",
+    "correct_option": "get",
+    "other_options": ["take", "buy", "send"],
+    "ja": "海外発送できますか？"
   },
   {
     "sceneId": "scene_82",
     "sceneName": "Shopping",
-    "en": "Do you %s any coupons I can use?",
-    "correct_option": "have",
-    "other_options": ["offer", "give", "do"]
+    "en": "Do you %s a membership discount?",
+    "correct_option": "offer",
+    "other_options": ["take", "sell", "give"],
+    "ja": "会員割引はありますか？"
   },
   {
     "sceneId": "scene_83",
     "sceneName": "Emotions",
-    "en": "I’m %s of overwhelmed.",
-    "correct_option": "kind",
-    "other_options": ["sort", "bit", "little"]
+    "en": "I'm %s exhausted today.",
+    "correct_option": "totally",
+    "other_options": ["pretty", "very", "too"],
+    "ja": "今日は完全に疲れ切ってる。"
   },
   {
     "sceneId": "scene_84",
     "sceneName": "Emotions",
-    "en": "I’m really %s out from work.",
-    "correct_option": "worn",
-    "other_options": ["wear", "wearing", "worned"]
+    "en": "That really %s my heart.",
+    "correct_option": "broke",
+    "other_options": ["cut", "lost", "fell"],
+    "ja": "それで本当に心が折れた。"
   },
   {
     "sceneId": "scene_85",
     "sceneName": "Casual Talk",
-    "en": "Let me %s my bag real quick.",
-    "correct_option": "grab",
-    "other_options": ["take", "pick", "get"]
+    "en": "Can you %s me up at 7?",
+    "correct_option": "wake",
+    "other_options": ["call", "text", "ring"],
+    "ja": "7時に起こしてくれる？"
   },
   {
     "sceneId": "scene_86",
     "sceneName": "Casual Talk",
-    "en": "I’ll %s you once I arrive.",
-    "correct_option": "call",
-    "other_options": ["text", "meet", "see"]
+    "en": "I'm %s heading to your place now.",
+    "correct_option": "actually",
+    "other_options": ["pretty", "totally", "really"],
+    "ja": "実は今そっち向かってる。"
   },
   {
     "sceneId": "scene_87",
     "sceneName": "Soliloquy",
-    "en": "I need to %s down for a second.",
-    "correct_option": "sit",
-    "other_options": ["set", "seat", "sit up"]
+    "en": "I should %s something quick for lunch.",
+    "correct_option": "grab",
+    "other_options": ["take", "get", "eat"],
+    "ja": "昼ごはん何かサッと食べないとな…。"
   },
   {
     "sceneId": "scene_88",
     "sceneName": "Soliloquy",
-    "en": "Let me %s if I have any snacks.",
-    "correct_option": "check",
-    "other_options": ["look", "see", "find"]
+    "en": "Where did I %s my charger…",
+    "correct_option": "leave",
+    "other_options": ["take", "put", "keep"],
+    "ja": "充電器どこ置いたっけ…。"
   },
   {
     "sceneId": "scene_89",
     "sceneName": "Ordering",
-    "en": "Can I %s the same thing as them?",
+    "en": "Could I %s a small salad?",
     "correct_option": "get",
-    "other_options": ["take", "order", "have"]
+    "other_options": ["take", "order", "eat"],
+    "ja": "小さいサラダもらえますか？"
   },
   {
     "sceneId": "scene_90",
     "sceneName": "Emotions",
-    "en": "I’m %s pumped for tomorrow!",
-    "correct_option": "so",
-    "other_options": ["very", "too", "much"]
+    "en": "I'm so %s right now.",
+    "correct_option": "bored",
+    "other_options": ["boring", "bore", "boredom"],
+    "ja": "今めっちゃ退屈してる。"
   }
 ]
